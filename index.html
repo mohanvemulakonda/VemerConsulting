@@ -10,115 +10,100 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
-        /* Style the header */
-        header {
-            background-color: #232f3e;
+        /* ... Your existing styles ... */
+
+        /* New styles for the banner */
+        .top-banner {
+            background-color: #0080ff;
             color: white;
-            padding: 10px 0;
             text-align: center;
+            padding: 10px 0;
         }
-        .logo img {
-            height: 40px; /* Adjust for mobile */
+        .top-banner img {
+            height: 20px;
             vertical-align: middle;
         }
-        .search-bar {
-            margin-top: 8px; /* Adjust for mobile */
+
+        /* New styles for the language switcher */
+        .language-switcher {
+            float: right;
+            margin-top: 12px;
         }
-        .search-bar input[type="text"] {
-            padding: 8px; /* Adjust for mobile */
-            border: none;
-            border-radius: 4px;
-        }
-        .search-bar button {
-            padding: 8px 12px; /* Adjust for mobile */
-            background-color: #f0c14b;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        /* Style the navigation */
-        nav ul {
-            list-style: none;
-            background-color: #131921;
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-        }
-        nav li {
-            float: left;
-        }
-        nav a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
+        .language-switcher a {
+            margin: 0 5px;
             text-decoration: none;
+            color: #555;
         }
-        /* Style the main content */
-        main {
-            padding: 20px;
-        }
-        .banner {
-            background-color: #f0c14b;
-            padding: 20px;
-            margin-bottom: 20px;
+
+        /* New styles for registration/login */
+        .registration-login {
             text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px 0;
         }
-        .banner h2 {
-            margin: 0;
+        .registration-login h2 {
+            color: #0080ff;
         }
-        /* Style the footer */
-        footer {
-            background-color: #232f3e;
+        .registration-login input[type="text"],
+        .registration-login input[type="password"],
+        .registration-login button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .registration-login button {
+            background-color: #0080ff;
             color: white;
-            text-align: center;
-            padding: 10px 0;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
+    <div class="top-banner">
+        <span>Free Shipping on Orders over 24€ <img src="shipping_icon.png" alt="Free Shipping"></span>
+        <a href="mailto:info@binaryspaces.in">Contact Us</a>
+        <div class="language-switcher">
+            <a href="#">EN</a> | <a href="#">DE</a>
+        </div>
+    </div>
+
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Spices Logo">
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search for products...">
-            <button>Search</button>
-        </div>
+        <!-- ... Your existing header content ... -->
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#rice">Rice</a></li>
-            <li><a href="#masalas">Masalas</a></li>
-            <!-- Add more categories here -->
-        </ul>
-    </nav>
+    <!-- ... Your existing navigation ... -->
 
     <main>
         <section id="home">
             <div class="banner">
-                <h2>Welcome to Spices</h2>
-                <p>Your One-Stop Shop for Indian Grocery Goodness</p>
-            </div>
-            <div class="banner">
-                <img src="special_offers_banner.jpg" alt="Special Offers Banner">
+                <!-- ... Your existing banner content ... -->
             </div>
             <div class="product-suggestions">
-                <h2>Recommended for You</h2>
-                <div class="product-list">
-                    <!-- Display recommended products here -->
-                </div>
+                <!-- ... Your existing recommended products ... -->
             </div>
         </section>
 
-        <!-- Add more sections for other categories -->
+        <!-- ... Add more sections for other categories ... -->
+
+        <section id="registration-login" class="registration-login">
+            <h2>Welcome to Spices!</h2>
+            <p>New here? Register or existing user? Log in.</p>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button>Log In</button>
+            <p>Don't have an account? <a href="#">Register</a></p>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Spices. All rights reserved.</p>
-    </footer>
+    <!-- ... Your existing footer ... -->
+
 </body>
 </html>
