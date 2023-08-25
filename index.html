@@ -14,92 +14,125 @@
         }
         /* ... Your existing styles ... */
 
-        /* New styles for the banner */
-        .top-banner {
+        /* New styles for the banner, language switcher, and registration/login */
+        /* ... Your existing styles ... */
+
+        /* New styles for the dropdown menu */
+        nav select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        /* New styles for the scroll banner */
+        .scroll-banner {
             background-color: #0080ff;
             color: white;
             text-align: center;
-            padding: 10px 0;
-        }
-        .top-banner img {
-            height: 20px;
-            vertical-align: middle;
+            padding: 10px;
+            margin: 20px 0;
         }
 
-        /* New styles for the language switcher */
-        .language-switcher {
-            float: right;
-            margin-top: 12px;
-        }
-        .language-switcher a {
-            margin: 0 5px;
-            text-decoration: none;
-            color: #555;
-        }
-
-        /* New styles for registration/login */
-        .registration-login {
-            text-align: center;
+        /* New styles for category-wise product display */
+        .category {
             padding: 20px;
             background-color: #fff;
             margin: 20px 0;
         }
-        .registration-login h2 {
+        .category h2 {
             color: #0080ff;
         }
-        .registration-login input[type="text"],
-        .registration-login input[type="password"],
-        .registration-login button {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 14px;
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
         }
-        .registration-login button {
-            background-color: #0080ff;
-            color: white;
-            border: none;
-            cursor: pointer;
+        .product {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* New styles for recommended products */
+        .recommended-products {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .recommended-products h2 {
+            color: #0080ff;
+        }
+        .recommended-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .recommended-item {
+            width: calc(25% - 20px);
+            margin: 10px;
+            background-color: #fff;
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="top-banner">
-        <span>Free Shipping on Orders over 24€ <img src="shipping_icon.png" alt="Free Shipping"></span>
-        <a href="mailto:info@binaryspaces.in">Contact Us</a>
-        <div class="language-switcher">
-            <a href="#">EN</a> | <a href="#">DE</a>
-        </div>
+        <!-- ... Your existing top banner content ... -->
     </div>
 
     <header>
         <!-- ... Your existing header content ... -->
     </header>
 
-    <!-- ... Your existing navigation ... -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li>
+                <select>
+                    <option value="all">All Products</option>
+                    <option value="rice">Rice</option>
+                    <option value="masalas">Masalas</option>
+                    <!-- Add more categories here -->
+                </select>
+            </li>
+            <!-- ... Other menu items ... -->
+        </ul>
+    </nav>
 
     <main>
         <section id="home">
-            <div class="banner">
-                <!-- ... Your existing banner content ... -->
+            <div class="scroll-banner">
+                <h2>Check Out Our Latest Discounts and Offers!</h2>
             </div>
-            <div class="product-suggestions">
-                <!-- ... Your existing recommended products ... -->
+
+            <div class="category">
+                <h2>Rice</h2>
+                <div class="product-list">
+                    <!-- Display rice products here -->
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>Masalas</h2>
+                <div class="product-list">
+                    <!-- Display masalas products here -->
+                </div>
             </div>
         </section>
 
         <!-- ... Add more sections for other categories ... -->
 
-        <section id="registration-login" class="registration-login">
-            <h2>Welcome to Spices!</h2>
-            <p>New here? Register or existing user? Log in.</p>
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-            <button>Log In</button>
-            <p>Don't have an account? <a href="#">Register</a></p>
+        <section id="recommended" class="recommended-products">
+            <h2>Recommended Products</h2>
+            <div class="recommended-list">
+                <!-- Display recommended products based on search history here -->
+            </div>
         </section>
     </main>
 
