@@ -3,140 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spices - Indian Grocery E-Com</title>
-    <link rel="stylesheet" href="styles.css"> <!-- You can link your CSS file here -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Livato Solutions</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset some default styles */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
-        /* ... Your existing styles ... */
 
-        /* New styles for the banner, language switcher, and registration/login */
-        /* ... Your existing styles ... */
+        /* Apply basic styling */
+        body {
+            font-family: 'Open Sans', Arial, sans-serif; /* Use Open Sans as the primary font */
+            background-color: #f7f7f7;
+        }
 
-        /* New styles for the dropdown menu */
-        nav select {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background-color: #fff;
-            font-size: 14px;
+        /* Header styles */
+        header {
+            background-color: #ffffff; /* White background */
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333; /* Dark text color */
+            font-weight: bold;
+        }
+
+        /* Navigation links styles */
+        nav a:hover {
+            color: #7c6c41; /* Beige on hover */
+        }
+
+        /* Main content styles */
+        main {
+            background-color: #ffffff; /* White background */
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+        }
+
+        /* Hero banner styles */
+        .hero-banner {
+            background-image: url('hero-background.jpg'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 0;
+            color: #7c6c41; /* Beige text color */
+        }
+
+        /* CTA buttons styles */
+        .cta-buttons {
+            margin-top: 20px;
+        }
+
+        .explore-button,
+        .contact-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7c6c41; /* Beige background */
+            color: #fff; /* White text color */
+            text-decoration: none;
+            margin-right: 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .explore-button:hover,
+        .contact-button:hover {
+            background-color: #5d4b2f; /* Darker beige on hover */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #ffffff; /* White background */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+        }
+
+        .footer-links {
+            list-style-type: none;
             margin-bottom: 20px;
         }
 
-        /* New styles for the scroll banner */
-        .scroll-banner {
-            background-color: #0080ff;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin: 20px 0;
+        .footer-links li {
+            display: inline;
+            margin-right: 10px;
         }
 
-        /* New styles for category-wise product display */
-        .category {
-            padding: 20px;
-            background-color: #fff;
-            margin: 20px 0;
-        }
-        .category h2 {
-            color: #0080ff;
-        }
-        .product-list {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .product {
-            width: calc(33.33% - 20px);
-            margin: 10px;
-            background-color: #f9f9f9;
-            padding: 10px;
-            text-align: center;
+        .footer-links a {
+            text-decoration: none;
+            color: #7c6c41; /* Beige text color */
         }
 
-        /* New styles for recommended products */
-        .recommended-products {
-            background-color: #f4f4f4;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        .recommended-products h2 {
-            color: #0080ff;
-        }
-        .recommended-list {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .recommended-item {
-            width: calc(25% - 20px);
-            margin: 10px;
-            background-color: #fff;
-            padding: 10px;
-            text-align: center;
+        /* Copyright text styles */
+        footer p {
+            color: #333; /* Dark text color */
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <div class="top-banner">
-        <!-- ... Your existing top banner content ... -->
-    </div>
-
     <header>
-        <!-- ... Your existing header content ... -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+        </div>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li>
-                <select>
-                    <option value="all">All Products</option>
-                    <option value="rice">Rice</option>
-                    <option value="masalas">Masalas</option>
-                    <!-- Add more categories here -->
-                </select>
-            </li>
-            <!-- ... Other menu items ... -->
-        </ul>
-    </nav>
-
+    
     <main>
         <section id="home">
-            <div class="scroll-banner">
-                <h2>Check Out Our Latest Discounts and Offers!</h2>
-            </div>
-
-            <div class="category">
-                <h2>Rice</h2>
-                <div class="product-list">
-                    <!-- Display rice products here -->
-                </div>
-            </div>
-
-            <div class="category">
-                <h2>Masalas</h2>
-                <div class="product-list">
-                    <!-- Display masalas products here -->
+            <div class="hero-banner">
+                <h1>Welcome to Livato Solutions</h1>
+                <p>Your Label Manufacturing Partner</p>
+                <div class="cta-buttons">
+                    <a href="#products" class="explore-button">Explore Products</a>
+                    <a href="#contact" class="contact-button">Contact Us</a>
                 </div>
             </div>
         </section>
-
-        <!-- ... Add more sections for other categories ... -->
-
-        <section id="recommended" class="recommended-products">
-            <h2>Recommended Products</h2>
-            <div class="recommended-list">
-                <!-- Display recommended products based on search history here -->
+        
+        <section id="about">
+            <!-- About Us content goes here -->
+        </section>
+        
+        <section id="products">
+            <!-- Products content goes here -->
+        </section>
+        
+        <section id="careers">
+            <!-- Careers content goes here -->
+        </section>
+        
+        <section id="contact">
+            <div class="contact-form">
+                <!-- Contact form goes here -->
             </div>
         </section>
     </main>
-
-    <!-- ... Your existing footer ... -->
-
+    
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+        <p>&copy; 2023 Livato Solutions</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+        </div>
+    </footer>
 </body>
 </html>
